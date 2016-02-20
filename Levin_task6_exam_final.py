@@ -92,16 +92,3 @@ print(TimorinVA.full_name)
 print(TimorinVA.phone)
 print(TimorinVA.email)
 print(TimorinVA.keywords)
-
-
-# In[34]:
-
-s="привет"
-index = s.find("рив")
-print(index)
-
-
-# In[ ]:
-
-
-
