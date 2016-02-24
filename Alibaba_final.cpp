@@ -60,8 +60,8 @@ bool sort_func(std::vector <int> one, std::vector <int> two) //Задаем от
 
 int main()
 {
-     std::ios_base::sync_with_stdio(false); //волшебные строчки с самого первого семинара, которые ускоряют прогу
-     std::cin.tie(nullptr);// волшебные строчки
+     std::ios_base::sync_with_stdio(false); 
+     std::cin.tie(nullptr);
      int num;
      std::cin >> num; //считываем все. Монеты и сроки годности считываем в вектор из двумерных векторов
      std::vector <std::vector<int>> coins;
@@ -88,7 +88,7 @@ int main()
      //optbeg_l_r(т.е. optinon_beggining_l_r), optbeg_l_r - длина пути из второй возможности, когда сначала покрываем начало.
      //posbeg_l_r и posbeg_r_l - осуществимости этих путей.
      bool posbeg_l_r, posend_l_r, posbeg_r_l, posend_r_l;
-     for (int ind = 1; ind < num; ++ind) // Начинаем развлекаться. Заполняем матрицу подиагонально, т.е. ведем индукцию по длине отрезков.
+     for (int ind = 1; ind < num; ++ind) // Начинаем. Заполняем матрицу подиагонально, т.е. ведем индукцию по длине отрезков.
      {                                   // Всего у нас num-1 диагональка или num-1 различная длина, т.к. главную диагональ мы уже заполнили.
           ++len;
           for (int jind = 0; jind < num - len; ++jind)// Этот цикл заполняет две конкретные диагонали, соответствующие одинаковым длинам.
